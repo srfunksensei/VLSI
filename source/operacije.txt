@@ -1,0 +1,49 @@
+operacije:
+
+0000 0001 - RTS
+0000 0010 - RTI
+0000 0100 - INTE
+0000 1000 - INTD
+0001 0000 - TRPE
+0010 0000 - TRPD
+----------------
+0100 0000 - JMP
+0101 1111 - JSR
+----------------
+0110 0000 - BNZ
+0111 1111 - INT
+----------------
+1000 0000 xx00 0xxx - ASR
+-------------------------
+1111 1111 xx00 0xxx - PUSH
+1111 1111 xx00 1xxx - POP
+1111 1111 xx01 0xxx - INC
+1111 1111 xx01 1xxx - DEC
+1111 1111 xx10 0xxx - JMPIND
+----------------------------
+1000 0001 - MOVS
+1000 0010 - MOVD
+1000 0100 - ADD
+1000 1000 - AND
+----------------
+
+adresiranja:
+
+registarsko direktno - AX, BX, CX, DX, SI, DI, SP, BP
+registarsko indirektno - [BX], [SI], [DI], [BP], [BX+SI], [BX+DI], [BP+SI], [BP+DI]
+registarsko indirektno sa pomerajem - [BX+pom], [SI+pom], [DI+pom], [BP+pom], [BX+SI+pom], [BX+DI+pom], [BP+SI+pom], [BP+DI+pom]
+memorijsko direktno - adresa
+memorijsko indirektno - [adresa]
+relativno adresiranje - [PC+pom]
+neposredno - #vrednost
+
+2bajt
+-----------------
+00xx xZZZ regdir ZZZ - AX, BX, CX, DX, SI, DI, SP, BP
+01xx xZZZ regind ZZZ - [BX], [SI], [DI], [BP], [BX+SI], [BX+DI], [BP+SI], [BP+DI]
+10xx xZZZ regindpom ZZZ - [BX], [SI], [DI], [BP], [BX+SI], [BX+DI], [BP+SI], [BP+DI]
+11xx xxZZ
+	ZZ - 00 memdir
+	   - 01 memind
+	   - 10 rel
+	   - 11 immed

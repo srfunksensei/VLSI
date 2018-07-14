@@ -1,0 +1,9 @@
+setimr1	setimr2	setimr3	rstimr1	rstimr2	rstimr3	intr1	intr2	intr3	intacl	inta	pswl0	pswl1	pswi
+1 	0 	0 	0 	0 	0 	1 	0	0	0	0	0	0	1
+0 	0 	0 	1 	0 	0 	0 	0	0	1	1	0	0	1
+0 	1 	0 	0 	0 	0 	0 	1	0	0	0	0	0	1
+0 	0 	0 	0 	1 	0 	0 	0	0	1	1	0	0	1
+0 	0 	1 	0 	0 	0 	0 	0	1	0	0	0	0	1
+0 	0 	0 	0 	0 	1 	0 	0	0	1	1	0	0	1
+0 	0 	1 	0 	0 	0 	0 	0	1	0	0	1	1	1
+
